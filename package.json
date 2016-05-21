@@ -1,0 +1,26 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "My technical notes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "notes"
+  ],
+  "author": "ilife",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.5.0",
+    "body-parser": "^1.14.2",
+    "connect-mongo": "^0.8.2",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "letsencrypt": "^1.4.3",
+    "mongoose": "^4.2.3",
+    "multer": "^1.1.0",
+    "nconf": "^0.8.2",
+    "winston": "^1.1.1"
+  }
+}

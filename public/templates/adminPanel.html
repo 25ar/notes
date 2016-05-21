@@ -1,0 +1,23 @@
+<form ng-submit="submit()">
+  <table>
+    <caption>Добавлення нової статті</caption>
+    <tbody>
+      <tr>
+        <td><label for="Header">Назва:</label></td>
+        <td><input name="Header" type="text" ng-model="title"></td>
+      </tr>
+      <tr>
+        <td><label for="Content">Вміст:</label></td>
+        <td><textarea name="Content" ng-model="contentBody"></textarea> </td>
+      </tr>
+    </tbody>
+  </table>
+  <select ng-model="section">
+    <option value="administrating">Адміністрування</option>
+    <option value="programing">Програмування</option>
+    <option value="networks">Мережі</option>
+    <option value="electronics">Електроніка</option>
+  </select>
+  <input type="file" value="Вибрати файл" ng-model="files" multiple> <br>
+  <button type="submit">Відправити</button>
+</form>

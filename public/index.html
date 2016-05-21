@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="notesApplication">
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="topMenu">
+      <div class="top-left">f</div>
+      <div class="top-center">
+        <a ui-sref="main"> Головна </a>
+        <a ui-sref="programming"> Програмування </a>
+        <a ui-sref="administrating"> Адміністрування </a>
+        <a ui-sref="networks"> Мережі </a>
+        <a ui-sref="electronics"> Електроніка </a>
+      </div>
+      <div class="top-right">f</div>
+    </div>
+
+    <br>
+    <div class="content cols-11">
+      <ui-view></ui-view>
+    </div>
+  </div>
+
+  <script src="/javascript/angular.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/javascript/ngModules/notesApplication.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/javascript/ngModules/mainPageModule.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/javascript/angular-ui-router.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript" charset="utf-8", src="/javascript/ngModules/programmingPageModule.js"></script>
+  <script type="text/javascript" charset="utf-8", src="/javascript/ngModules/administratingPageModule.js"></script>
+  <script type="text/javascript" charset="utf-8", src="/javascript/ngModules/networksPageModule.js"></script>
+  <script type="text/javascript" charset="utf-8", src="/javascript/ngModules/electronicsPageModule.js"></script>
+  <script type="text/javascript" charset="utf-8", src="/javascript/ngModules/adminPanelModule.js"></script>
+</body>
+</html>
